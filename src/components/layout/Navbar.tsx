@@ -29,7 +29,7 @@ export default function Navbar() {
               src={asset("logo.svg")}
               alt="Happy Client Cleaning Services LLC"
               /* El logo es azul sobre transparente: lo pasamos a blanco para el navy */
-              className="h-12 md:h-16 w-auto [filter:brightness(0)_invert(1)]"
+              className="h-14 md:h-16 w-auto [filter:brightness(0)_invert(1)]"
             />
           </a>
 
