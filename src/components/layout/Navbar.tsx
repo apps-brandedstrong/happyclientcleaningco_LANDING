@@ -23,13 +23,13 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="flex items-center justify-between h-24 md:h-28">
           <a href="#top" className="flex items-center gap-2 shrink-0">
             <img
               src={asset("logo.svg")}
               alt="Happy Client Cleaning Services LLC"
               /* El logo es azul sobre transparente: lo pasamos a blanco para el navy */
-              className="h-14 md:h-16 w-auto [filter:brightness(0)_invert(1)]"
+              className="h-20 md:h-24 w-auto [filter:brightness(0)_invert(1)]"
             />
           </a>
 
