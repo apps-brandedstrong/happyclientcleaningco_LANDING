@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { SOCIAL_PROOF_ITEMS, type SocialProofItem } from "@/data/socialProof";
+import { HIGHLIGHTS, type Highlight } from "@/data/highlights";
 
 function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -10,8 +10,8 @@ function shuffleArray<T>(arr: T[]): T[] {
   return a;
 }
 
-export function useSocialProofRotation(intervalMs = 5000): SocialProofItem {
-  const [items] = useState(() => shuffleArray(SOCIAL_PROOF_ITEMS));
+export function useHighlightRotation(intervalMs = 5000): Highlight {
+  const [items] = useState(() => shuffleArray(HIGHLIGHTS));
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

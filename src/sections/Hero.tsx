@@ -93,10 +93,10 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-white/85 mb-7 max-w-lg leading-relaxed">
-              Deep hot-water extraction that lifts ground-in dirt, traffic lanes
-              and pet odors. We also handle house, deep, move-in/out and
-              commercial cleaning — one insured local team for the whole
-              property.
+              Deep extraction cleaning that lifts embedded dirt, stains and
+              odors from carpets, rugs and upholstery. We also handle house,
+              deep, move-in/out and commercial cleaning — one insured local team
+              for the whole property.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">

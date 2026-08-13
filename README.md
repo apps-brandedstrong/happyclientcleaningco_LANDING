@@ -59,25 +59,36 @@ Para producción: Resend → Domains → Add Domain → cargar los registros DNS
 `happyclientcleaningco.com` → luego poner
 `RESEND_FROM="Happy Client Cleaning <leads@happyclientcleaningco.com>"`.
 
+## Nada de contenido falso
+
+Esta landing no publica reseñas inventadas ni actividad de usuarios simulada.
+Dos decisiones deliberadas:
+
+- **[src/data/reviews.ts](src/data/reviews.ts) arranca vacío.** Mientras no haya
+  reseñas reales, la sección muestra credenciales verificables (20+ años,
+  family-owned, fully insured, free estimates) y un link a Google. Al pegar
+  reseñas reales en el array, las tarjetas aparecen solas.
+- **El widget flotante muestra info real** ([src/data/highlights.ts](src/data/highlights.ts)):
+  oferta, áreas, credenciales, servicios y horarios. No el típico
+  "Megan R. acaba de llamar hace 2 min", que inventa personas e interacciones.
+
 ## Pendientes antes de lanzar los anuncios
 
-- [ ] **Reseñas reales.** [src/data/reviews.ts](src/data/reviews.ts) tiene
-      placeholders. Reemplazar por reseñas reales del Google Business Profile
-      (nombre, fecha y texto tal cual). Publicar testimonios inventados como
-      reales es publicidad engañosa y puede costar la cuenta de Google Ads.
-- [ ] **URL de Google.** Actualizar `GOOGLE_REVIEWS_URL` en el mismo archivo con
-      el link real al perfil.
+- [ ] **Reseñas reales.** Pedirle al cliente reseñas de su Google Business
+      Profile y cargarlas en `REVIEWS` con nombre, fecha y texto tal cual.
+- [ ] **URL de Google.** `GOOGLE_REVIEWS_URL` apunta a una búsqueda de Google
+      (es lo mismo que hace el sitio del cliente, porque todavía no tienen ficha
+      vinculada). Reemplazar por la URL del perfil cuando exista.
 - [ ] **Mapa.** `mapsEmbedUrl` en [src/data/siteConfig.ts](src/data/siteConfig.ts)
       apunta a Fort Collins genérico. Si el negocio tiene ficha de Google Maps,
       reemplazar por su embed.
-- [ ] **Widget de actividad.** [src/data/socialProof.ts](src/data/socialProof.ts)
-      muestra actividad de ejemplo, no interacciones reales. Decidir si se deja,
-      se alimenta desde el CRM, o se saca de
-      [FloatingWidgets.tsx](src/components/layout/FloatingWidgets.tsx).
 - [ ] **Número de tracking.** Si la campaña usa un número distinto para medir
       llamadas, cambiar `phone` / `phoneHref` en `siteConfig.ts`.
 - [ ] **Letra chica de la promo.** Confirmar con el cliente qué cuenta como
       "room" y qué queda fuera del $160 (escaleras, pasillos, suciedad pesada).
+- [ ] **Cobertura fuera de Fort Collins.** El sitio del cliente solo menciona
+      Fort Collins. Las otras 6 ciudades vienen del brief de campaña —
+      confirmar que efectivamente dan servicio en todas antes de anunciarlas.
 
 ## Estructura
 

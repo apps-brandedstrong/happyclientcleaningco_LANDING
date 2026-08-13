@@ -1,33 +1,31 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  FaPhone,
-  FaStar,
-  FaCalendarCheck,
   FaTag,
-  FaCommentAlt,
-  FaFileAlt,
+  FaMapMarkerAlt,
+  FaShieldAlt,
+  FaBroom,
+  FaClock,
   FaTimes,
 } from "react-icons/fa";
-import { useSocialProofRotation } from "@/hooks/useSocialProofRotation";
+import { useHighlightRotation } from "@/hooks/useHighlightRotation";
 import { useScrollTop } from "@/hooks/useScrollTop";
-import type { InteractionType } from "@/data/socialProof";
+import type { HighlightType } from "@/data/highlights";
 
 const typeConfig: Record<
-  InteractionType,
+  HighlightType,
   { icon: React.ReactNode; color: string; bg: string }
 > = {
-  call: { icon: <FaPhone />, color: "text-cta", bg: "bg-cta/10" },
-  quote: { icon: <FaFileAlt />, color: "text-sky", bg: "bg-sky/10" },
-  review: { icon: <FaStar />, color: "text-amber-500", bg: "bg-amber-100" },
-  book: { icon: <FaCalendarCheck />, color: "text-navy", bg: "bg-navy/10" },
-  promo: { icon: <FaTag />, color: "text-cyan", bg: "bg-cyan/10" },
-  message: { icon: <FaCommentAlt />, color: "text-sky", bg: "bg-sky/10" },
+  offer: { icon: <FaTag />, color: "text-cta", bg: "bg-cta/10" },
+  area: { icon: <FaMapMarkerAlt />, color: "text-sky", bg: "bg-sky/10" },
+  credential: { icon: <FaShieldAlt />, color: "text-navy", bg: "bg-navy/10" },
+  service: { icon: <FaBroom />, color: "text-cyan", bg: "bg-cyan/10" },
+  hours: { icon: <FaClock />, color: "text-sky", bg: "bg-sky/10" },
 };
 
-export default function SocialProofWidget() {
+export default function HighlightsWidget() {
   const [dismissed, setDismissed] = useState(false);
-  const item = useSocialProofRotation(5000);
+  const item = useHighlightRotation(5000);
   // Recién aparece pasado el hero, para no tapar los CTAs principales.
   const pastHero = useScrollTop(600);
 
@@ -53,22 +51,18 @@ export default function SocialProofWidget() {
           </div>
 
           <div className="flex-1 min-w-0">
-            <p className="text-sm text-ink leading-snug">
-              <span className="font-bold">{item.name}</span>{" "}
-              <span className="text-muted">from {item.location}</span>
+            <p className="text-sm font-bold text-navy leading-snug">
+              {item.title}
             </p>
-            <p className="text-sm text-muted leading-snug">
-              {item.action}{" "}
-              <span className="font-semibold text-navy">{item.service}</span>
+            <p className="text-sm text-muted leading-snug mt-0.5">
+              {item.detail}
             </p>
-            {item.type === "review" && item.rating && (
-              <div className="flex gap-0.5 mt-1">
-                {[...Array(item.rating)].map((_, i) => (
-                  <FaStar key={i} className="text-amber-400 text-xs" />
-                ))}
-              </div>
-            )}
-            <p className="text-xs text-muted/70 mt-1">{item.timeAgo}</p>
+            <a
+              href="#contact"
+              className="inline-block text-xs font-bold text-cta mt-2 hover:underline"
+            >
+              Get a free estimate →
+            </a>
           </div>
 
           <button

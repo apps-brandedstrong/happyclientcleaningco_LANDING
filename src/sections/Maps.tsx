@@ -8,7 +8,7 @@ const areaGroups = [
   {
     title: "Fort Collins & Timnath",
     description:
-      "Our home base. Same-week carpet cleaning appointments across Old Town, Harmony, Fossil Creek and Timnath.",
+      "Our home base. Carpet, upholstery and cleaning services throughout Fort Collins and Timnath.",
   },
   {
     title: "Loveland, Windsor & Severance",

@@ -13,7 +13,7 @@ export const SERVICES: Service[] = [
     id: "carpet-cleaning",
     title: "Carpet Cleaning",
     description:
-      "Deep hot-water extraction that lifts ground-in dirt, traffic lanes and odors your vacuum leaves behind. First three rooms $160 — spot removal and deodorizer included.",
+      "Deep extraction cleaning that lifts embedded dirt, stains and odors from carpets and area rugs. First three rooms $160 — spot removal and deodorizer included.",
     icon: "FaBroom",
     image: "/gallery/carpet-real-1.jpg",
     featured: true,
@@ -22,16 +22,16 @@ export const SERVICES: Service[] = [
     id: "stain-spot-removal",
     title: "Spot & Stain Removal",
     description:
-      "Pet accidents, wine, coffee, grease and mystery spots treated with the right solution for your fiber — included free with the $160 three-room special.",
+      "Spots and stains treated as part of the clean, so the marks that bother you most get direct attention — included with the $160 three-room special.",
     icon: "FaTint",
     image: "/gallery/carpet-real-3.jpg",
     featured: true,
   },
   {
     id: "pet-odor",
-    title: "Pet Odor & Deodorizing",
+    title: "Deodorizing Treatment",
     description:
-      "Neutralizes odor at the source instead of masking it, so the room actually smells clean when we leave. Included with the three-room special.",
+      "A deodorizer treatment applied after the deep clean, so the room is left fresh — not just visibly clean. Included with the $160 three-room special.",
     icon: "FaSprayCan",
     image: "/gallery/real-carpet-bedroom.webp",
     featured: true,

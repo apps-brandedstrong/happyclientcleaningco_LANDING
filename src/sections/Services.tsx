@@ -45,7 +45,7 @@ export default function Services() {
         <SectionTitle
           eyebrow="Our Specialty"
           title="Carpet Cleaning Done Properly"
-          subtitle="Hot-water extraction, fiber-safe solutions and a crew that has been doing this for 20+ years. Your first three rooms are $160 — spot removal and deodorizer included."
+          subtitle="Deep extraction cleaning from a family-owned crew with 20+ years in Northern Colorado. Your first three rooms are $160 — spot removal and deodorizer included."
         />
 
         {/* Destacados de carpet cleaning */}
