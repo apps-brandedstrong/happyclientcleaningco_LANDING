@@ -64,10 +64,25 @@ export default function LeadForm({
     };
 
     try {
-      const res = await fetch("/landing/api/send-email", {
+      // The public /landing URL is proxied by the main website. Submit through
+      // its verified email endpoint so leads share one reliable delivery path.
+      const res = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({
+          name: payload.name,
+          phone: payload.phone,
+          email: payload.email,
+          message: [
+            "Landing page lead",
+            `Service: ${payload.service || "Not specified"}`,
+            `City: ${payload.city || "Not specified"}`,
+            `Form: ${payload.source}`,
+            payload.message ? `Message: ${payload.message}` : "",
+          ]
+            .filter(Boolean)
+            .join("\n"),
+        }),
       });
       setStatus(res.ok ? "success" : "error");
       if (res.ok) form.reset();
@@ -154,12 +169,13 @@ export default function LeadForm({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor={`${source}-email`} className={labelClass}>
-            Email
+            Email *
           </label>
           <input
             id={`${source}-email`}
             type="email"
             name="email"
+            required
             placeholder="you@email.com"
             className={fieldClass}
           />
