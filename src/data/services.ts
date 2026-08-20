@@ -15,7 +15,7 @@ export const SERVICES: Service[] = [
     description:
       "Deep extraction cleaning that lifts embedded dirt, stains and odors from carpets and area rugs. First three rooms $160 — spot removal and deodorizer included.",
     icon: "FaBroom",
-    image: "/gallery/carpet-real-1.jpg",
+    image: "/landing/gallery/carpet-real-1.jpg",
     featured: true,
   },
   {
@@ -24,7 +24,7 @@ export const SERVICES: Service[] = [
     description:
       "Spots and stains treated as part of the clean, so the marks that bother you most get direct attention — included with the $160 three-room special.",
     icon: "FaTint",
-    image: "/gallery/carpet-real-3.jpg",
+    image: "/landing/gallery/carpet-real-3.jpg",
     featured: true,
   },
   {
@@ -33,7 +33,7 @@ export const SERVICES: Service[] = [
     description:
       "A deodorizer treatment applied after the deep clean, so the room is left fresh — not just visibly clean. Included with the $160 three-room special.",
     icon: "FaSprayCan",
-    image: "/gallery/real-carpet-bedroom.webp",
+    image: "/landing/gallery/real-carpet-bedroom.webp",
     featured: true,
   },
   {
@@ -42,7 +42,7 @@ export const SERVICES: Service[] = [
     description:
       "Sofas, sectionals, armchairs and mattresses cleaned with fabric-safe methods that pull out body oils, dust and stains.",
     icon: "FaCouch",
-    image: "/gallery/real-upholstery-sofa.webp",
+    image: "/landing/gallery/real-upholstery-sofa.webp",
   },
   {
     id: "rug-cleaning",
@@ -50,7 +50,7 @@ export const SERVICES: Service[] = [
     description:
       "Gentle, fiber-appropriate cleaning for area rugs and runners — wool, synthetic and delicate weaves handled with care.",
     icon: "FaLayerGroup",
-    image: "/gallery/carpet-real-4.jpg",
+    image: "/landing/gallery/carpet-real-4.jpg",
   },
   {
     id: "commercial-carpet",
@@ -58,7 +58,7 @@ export const SERVICES: Service[] = [
     description:
       "Offices, restaurants, hotels and apartment complexes. Scheduled after hours so your business never stops for a cleaning.",
     icon: "FaBuilding",
-    image: "/gallery/g-office.jpg",
+    image: "/landing/gallery/g-office.jpg",
   },
   {
     id: "house-cleaning",
@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
     description:
       "Reliable, detailed home cleaning that keeps every room fresh, tidy and spotless — one-time or on a recurring plan.",
     icon: "FaHome",
-    image: "/gallery/house-cleaning.jpg",
+    image: "/landing/gallery/house-cleaning.jpg",
   },
   {
     id: "deep-cleaning",
@@ -74,7 +74,7 @@ export const SERVICES: Service[] = [
     description:
       "Top-to-bottom deep cleans that reach the buildup everyday cleaning leaves behind — baseboards, fixtures, appliances and more.",
     icon: "FaMagic",
-    image: "/gallery/deep-cleaning.jpg",
+    image: "/landing/gallery/deep-cleaning.jpg",
   },
   {
     id: "move-in-out",
@@ -82,7 +82,7 @@ export const SERVICES: Service[] = [
     description:
       "Spotless move-in or move-out cleans so you leave or arrive to a perfectly clean space — great for getting deposits back.",
     icon: "FaBoxOpen",
-    image: "/gallery/move-in-out.jpg",
+    image: "/landing/gallery/move-in-out.jpg",
   },
   {
     id: "commercial-cleaning",
@@ -90,7 +90,7 @@ export const SERVICES: Service[] = [
     description:
       "Janitorial and commercial cleaning for offices, restaurants, hotels and apartment complexes, on the schedule that fits you.",
     icon: "FaCity",
-    image: "/gallery/commercial-cleaning.jpg",
+    image: "/landing/gallery/commercial-cleaning.jpg",
   },
   {
     id: "floor-care",
@@ -98,7 +98,7 @@ export const SERVICES: Service[] = [
     description:
       "Floor waxing, polishing, buffing and hardwood maintenance that protects and restores the floors you already have.",
     icon: "FaBorderAll",
-    image: "/gallery/real-hardwood-floor.webp",
+    image: "/landing/gallery/real-hardwood-floor.webp",
   },
   {
     id: "post-construction",
@@ -106,6 +106,6 @@ export const SERVICES: Service[] = [
     description:
       "Fine dust, debris and residue removed after a remodel or build so the space is ready to hand over.",
     icon: "FaHardHat",
-    image: "/gallery/real-detail-fixture.webp",
+    image: "/landing/gallery/real-detail-fixture.webp",
   },
 ];
