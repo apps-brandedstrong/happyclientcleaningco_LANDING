@@ -3,8 +3,8 @@ export const SITE_CONFIG = {
   shortName: "Happy Client Cleaning",
 
   // Teléfono principal de la landing de ads.
-  phone: "(970) 980-7843",
-  phoneHref: "tel:+19709807843",
+  phone: "(970) 546-8008",
+  phoneHref: "tel:+19705468008",
 
   // Teléfonos alternativos del negocio.
   phoneAlt: "(970) 391-2451",
