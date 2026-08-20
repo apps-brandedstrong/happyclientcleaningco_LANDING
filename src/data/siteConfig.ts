@@ -6,10 +6,6 @@ export const SITE_CONFIG = {
   phone: "(970) 546-8008",
   phoneHref: "tel:+19705468008",
 
-  // Teléfonos alternativos del negocio.
-  phoneAlt: "(970) 546-8008",
-  phoneAltHref: "tel:+19705468008",
-
   email: "info@happyclientcleaningco.com",
   whatsappHref:
     "https://wa.me/19705468008?text=Hi%2C%20I%27d%20like%20a%20free%20carpet%20cleaning%20estimate%20%28%24160%20first%203%20rooms%29",

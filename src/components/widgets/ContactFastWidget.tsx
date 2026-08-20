@@ -38,11 +38,12 @@ export default function ContactFastWidget() {
               </a>
 
               <a
-                href={`mailto:${SITE_CONFIG.email}`}
+                href="#contact"
+                onClick={() => setOpen(false)}
                 className="flex items-center gap-3 font-semibold px-4 py-3 rounded-xl border border-line hover:bg-cream transition-colors text-navy"
               >
                 <FaEnvelope className="text-cta" />
-                Send Email
+                Send Message
               </a>
 
               <a
