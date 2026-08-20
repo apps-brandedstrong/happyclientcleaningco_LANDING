@@ -7,8 +7,8 @@ export const SITE_CONFIG = {
   phoneHref: "tel:+19705468008",
 
   // Teléfonos alternativos del negocio.
-  phoneAlt: "(970) 391-2451",
-  phoneAltHref: "tel:+19703912451",
+  phoneAlt: "(970) 546-8008",
+  phoneAltHref: "tel:+19705468008",
 
   email: "info@happyclientcleaningco.com",
   whatsappHref:
