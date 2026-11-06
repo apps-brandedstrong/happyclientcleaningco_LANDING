@@ -99,10 +99,10 @@ src/data/                  config, servicios, reseñas, áreas, social proof
 src/sections/              Hero · Promo · About · WhyUs · Services ·
                            Gallery · Reviews · Maps · Footer
 src/components/widgets/    social proof · promo · contacto rápido ·
-                           WhatsApp · back to top
+                           back to top
 ```
 
 ## Cambiar la promo o los datos
 
 Casi todo sale de [src/data/siteConfig.ts](src/data/siteConfig.ts): teléfono,
-email, ciudades, horarios, WhatsApp y el bloque `promo` ($160 / first 3 rooms).
+email, ciudades, horarios y el bloque `promo` ($160 / first 3 rooms).
