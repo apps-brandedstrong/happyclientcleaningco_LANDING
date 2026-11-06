@@ -87,7 +87,7 @@ export const HIGHLIGHTS: Highlight[] = [
   {
     id: 11,
     title: "Open Mon–Sat, 8:00 AM–6:00 PM",
-    detail: "Call or text for same-week availability",
+    detail: "Call for same-week availability",
     type: "hours",
   },
   {

@@ -74,7 +74,7 @@ export default function Maps() {
               <div className="flex items-center gap-3 mb-3">
                 <FaPhone className="text-cyan" />
                 <div>
-                  <p className="text-xs text-white/60">Call or Text</p>
+                  <p className="text-xs text-white/60">Call us</p>
                   <a
                     href={SITE_CONFIG.phoneHref}
                     className="font-bold text-white hover:text-cyan transition-colors"

@@ -3,7 +3,6 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaClock,
-  FaWhatsapp,
 } from "react-icons/fa";
 import { SITE_CONFIG, asset } from "@/data/siteConfig";
 import { SERVICES } from "@/data/services";
@@ -47,7 +46,7 @@ export default function Footer() {
                   </span>
                   <span>
                     <span className="block text-xs text-white/50">
-                      Call or text
+                      Call us
                     </span>
                     <span className="font-bold">{SITE_CONFIG.phone}</span>
                   </span>
@@ -64,20 +63,6 @@ export default function Footer() {
                     <span className="font-bold break-all">
                       {SITE_CONFIG.email}
                     </span>
-                  </span>
-                </a>
-                <a
-                  href={SITE_CONFIG.whatsappHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-white hover:text-cyan transition-colors"
-                >
-                  <span className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
-                    <FaWhatsapp className="text-cyan" />
-                  </span>
-                  <span>
-                    <span className="block text-xs text-white/50">WhatsApp</span>
-                    <span className="font-bold">Message us</span>
                   </span>
                 </a>
                 <div className="flex items-center gap-3">
