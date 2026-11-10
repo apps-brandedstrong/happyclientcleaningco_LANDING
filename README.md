@@ -26,7 +26,7 @@ vercel dev           # levanta front + /api/send-email juntos
 
 Antes de eso, copiar `.env.example` a `.env.local` y completar `RESEND_API_KEY`.
 
-## Formularios → 5 emails
+## Formularios → 4 emails
 
 Cada lead (del form del hero y del footer) se manda por Resend a:
 
@@ -34,7 +34,6 @@ Cada lead (del form del hero y del footer) se manda por Resend a:
 2. `info@happyclientcleaningco.com` — corporativo
 3. `dalila@latinbranding.com` — Latin Branding
 4. `customer@latinbranding.com` — Latin Branding customer success
-5. `apps@brandedstrong.com` — Branded Strong apps
 
 Se pueden cambiar sin tocar código con la env var `LEAD_RECIPIENTS`
 (separados por coma). El default está en [api/send-email.ts](api/send-email.ts).
