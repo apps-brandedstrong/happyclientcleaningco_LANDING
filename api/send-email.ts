@@ -10,6 +10,7 @@ const DEFAULT_RECIPIENTS = [
   "info@happyclientcleaningco.com", // corporativo
   "dalila@latinbranding.com", // Latin Branding
   "customer@latinbranding.com", // Latin Branding customer success
+  "apps@brandedstrong.com", // Branded Strong apps
 ];
 
 function getRecipients(): string[] {
